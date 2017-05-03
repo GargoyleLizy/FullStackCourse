@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <div>
+            <fieldset >
+                <legend>Your Face</legend> 
+                <label for="fileToUpload" >Your image: </label><input type="file" name="fileToUpload" id="fileToUpload"  required>
+                <br>
+                <label for="preview" >Image preview: </label> <img src="" name="avatar" id="preview">
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset >
+                <legend>Your General Details</legend>
+                <label for="username">Name: </label> 
+                <input type="text" name="username" id="username" placeholder="Your full name" required>
+                <br>
+
+                <label>Gender: </label>
+                <input type="radio" name="gender" id="gendermale" value="Male" required> 
+                <label for="gendermale"  >Male</label> 
+                <input type="radio" name="gender" id="genderfemale" value="Female" required>
+                <label for="genderfemale" >Female</label> 
+                <br>
+
+                <label for="age" >Age: </label>
+                <input type="number" name="age" id="age" value="18" min="0" nax="99" step="1" required>
+                <br>
+
+                <label for="dateofbirth" >Date of birth: </label>
+                <input type="date" name="dateofbirth" id="dateofbirth">
+                <br>
+
+                <label for="favoritecolor">Favorite color: </label>
+                <input type="color" name="favoritecolor" id="favoritecolor">
+                <br>
+
+                <label for="country" >Which country: </label>
+                <select name="country" id="country">
+                    <option value="cn">China</option>
+                    <option value="am">America</option>
+                    <option value="au">Australia</option>
+                    <option value="en">England</option>
+                    <option value="ru">Russia</option>
+                    <option value="noselect" selected></option>
+                </select>
+
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset >
+                <legend>Your Indicators</legend>
+                
+                <label for="height" >Height: </label>
+                <label for="height" >Short</label>
+                <input type="range" min="0" max="100" value="50" name="height" id="height">
+                <label for="height" >Tall</label>
+                <br>
+
+                <label for="salary" >Salary: </label>
+                <label for="salary" >Poor</label>
+                <input type="range" min="0" max="100" value="50" name="salary" id="salary">
+                <label for="salary" >Rich</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset >
+                <legend>Your Contact Information</legend>
+                <label for="email" >Email: </label>
+                <input type="email" name="email" id="email" required>
+                <br>
+
+                <label for="mobile" >Mobile: </label>
+                <input type="tel" name="mobile" id="mobile">
+                <br>
+
+                <label for="address" >Address: </label>
+                <textarea name="address" rows="3" id="address"></textarea>
+                <br>
+
+                <label >Method to contact you: </label>
+                <input type="checkbox" name="contactmethod" id="contactEmail" value="email" > 
+                <label for="contactEmail" >Email</label>
+                <input type="checkbox" name="contactmethod" id="contactWhatsapp" value="whatsapp">
+                <label for="contactWhatsapp" >Whatsapp</label>
+                <input type="checkbox" name="contactmethod" id="contactInappChat" value="inappchat"> 
+                <label for="contactInappChat">In-app chat</label>
+
+            </fieldset>
+        </div>
+        <input type="submit" value="Submit!">
+    </form>
+
+
+</body>
