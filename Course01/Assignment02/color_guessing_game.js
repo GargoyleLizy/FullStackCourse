@@ -24,5 +24,17 @@ function do_game(){
 }
 
 function check_guess(){
-    if(random_color_list.indexOf(guess_input_text))
+    if(random_color_list.indexOf(guess_input_text) == -1){
+        // alert user that this is not right one.
+    }
+    var comparison = target.localeCompare(guess_input_text);
+    if(comparison < 0){
+        // guess is bigger
+    }
+    if(comparison > 0){
+        // guess is smaller
+    }
+    if(comparison == 0){
+        // guess is equal
+    }
 }
